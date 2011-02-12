@@ -21,7 +21,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class Auditfi extends Activity implements OnClickListener {
+public class AuditfiActivity extends Activity implements OnClickListener {
 	private static final String TAG = "Auditfi";
 	WifiManager wifi;
 	BroadcastReceiver receiver;
@@ -47,36 +47,30 @@ public class Auditfi extends Activity implements OnClickListener {
 		// Setup WiFi
 		wifi = (WifiManager) getSystemService(Context.WIFI_SERVICE);
 
-		/*
-		// Get WiFi status
-		WifiInfo info = wifi.getConnectionInfo();
-		textStatus.append("\n\nWiFi Status: " + info.toString());
-
-		// List available networks
-		List<WifiConfiguration> configs = wifi.getConfiguredNetworks();
-		for (WifiConfiguration config : configs) {
-			textStatus.append("\n\n" + config.toString());
+		//Si no esta activado wifi lo activamos
+		if(!wifi.isWifiEnabled()){
+			//No esta activado el wifi!
+            Toast.makeText( this, getResources().getString( R.string.ActivandoWifi ), Toast.LENGTH_LONG ).show();
+            
+            //Activamos el wifi
+            wifi.setWifiEnabled(true);
 		}
-		 */
-		// Register Broadcast Receiver
-		if (receiver == null)
-			receiver = new WiFiScanReceiver(this);
-
-		registerReceiver(receiver, new IntentFilter(
-				WifiManager.SCAN_RESULTS_AVAILABLE_ACTION));
 		Log.d(TAG, "onCreate()");
 	}
 
-	@Override
-	public void onStop() {
-		unregisterReceiver(receiver);
-	}
 
 	public void onClick(View view) {
-		// Toast.makeText(this, "On Click Clicked. Toast to that!!!",
-		// Toast.LENGTH_LONG).show();
 
 		if (view.getId() == R.id.buttonScan) {
+			
+			
+			if(!wifi.isWifiEnabled()){
+				//No esta activado el wifi!
+	            Toast.makeText( this, getResources().getString( R.string.WifiOff ), Toast.LENGTH_LONG ).show();
+	            
+	            //Salimos
+	            return ;
+			}
 			
 			Log.d(TAG, "onClick() wifi.startScan()");
 			wifi.startScan();

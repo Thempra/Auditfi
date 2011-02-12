@@ -21,7 +21,7 @@ public class DisclaimerActivity extends Activity {
         ImageButton pregunta = (ImageButton) findViewById(R.id.EscanearImagen);
         pregunta.setOnClickListener(new View.OnClickListener() {
         	 public void onClick(View view) {
-                 Intent myIntent = new Intent(view.getContext(), Auditfi.class);
+                 Intent myIntent = new Intent(view.getContext(), AuditfiActivity.class);
                  startActivityForResult(myIntent, 0);
              }
 

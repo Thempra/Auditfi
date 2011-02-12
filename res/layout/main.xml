@@ -12,7 +12,7 @@
     android:text="@string/BuscarRedes" android:padding="14px" ></Button>
     
   <ScrollView android:id="@+id/ScrollView01"
-    android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="14px" >
+    android:layout_width="wrap_content" android:layout_height="fill_parent" android:padding="14px" >
     <TextView android:layout_width="fill_parent"
       android:layout_height="wrap_content" android:id="@+id/textStatus"
       android:text="@string/SinRedes" />

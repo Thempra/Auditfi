@@ -34,15 +34,17 @@ public final class R {
         public static final int main=0x7f030001;
     }
     public static final class string {
+        public static final int ActivandoWifi=0x7f04000a;
         public static final int BuscarRedes=0x7f040008;
         public static final int Disclaimer1=0x7f040005;
         public static final int Disclaimer2=0x7f040006;
         public static final int Disclaimer3=0x7f040007;
         public static final int Escanear=0x7f040002;
         public static final int Salir=0x7f040004;
-        public static final int SinRedes=0x7f040009;
+        public static final int SinRedes=0x7f04000b;
         public static final int TituloLabel=0x7f040001;
         public static final int Volver=0x7f040003;
+        public static final int WifiOff=0x7f040009;
         public static final int app_name=0x7f040000;
     }
 }
