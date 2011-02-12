@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-  android:orientation="vertical" android:layout_width="fill_parent"
-  android:layout_height="fill_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="@drawable/background">
+
   
-  <Button android:layout_width="wrap_content"
+  <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  android:layout_height="wrap_content" android:layout_width="fill_parent" android:padding="10px">
+  		<!-- Titulo -->
+  		<TextView android:id="@+id/TituloLabel" android:text="@string/TituloLabel" android:textSize="32px" android:textStyle="bold" android:layout_centerInParent="true" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+  </RelativeLayout>
+  
+  <Button android:layout_width="fill_parent"
     android:layout_height="wrap_content" android:id="@+id/buttonScan"
-    android:text="Buscar redes"></Button>
+    android:text="@string/BuscarRedes" android:padding="14px" ></Button>
+    
   <ScrollView android:id="@+id/ScrollView01"
-    android:layout_width="wrap_content" android:layout_height="wrap_content">
+    android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="14px" >
     <TextView android:layout_width="fill_parent"
       android:layout_height="wrap_content" android:id="@+id/textStatus"
-      android:text="Auditfi" />
+      android:text="@string/SinRedes" />
   </ScrollView>
 
 </LinearLayout>
