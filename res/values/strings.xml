@@ -18,6 +18,7 @@
     <string name="Disclaimer3">Si no acepta las condiciones haga clic en salir.</string>
     
     
+    <string name="Vulnerables">Ver solo redes vulnerables</string>
     <string name="BuscarRedes">Buscar redes</string>
     <string name="WifiOff">WiFi desactivado.</string>
     <string name="ActivandoWifi">Activando WiFi.</string>

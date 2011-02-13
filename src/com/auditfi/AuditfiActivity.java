@@ -18,6 +18,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -86,12 +87,15 @@ public class AuditfiActivity extends Activity implements OnClickListener {
 				else if (config.SSID.length()==9)
 				    nombre=config.SSID.substring(0, 5);
 				
+				CheckBox vulnerables = (CheckBox) findViewById(R.id.vulnerables);
 				
-				textStatus.append("\n\n" + "Red: " + config.SSID + " - " + config.BSSID + " (" + config.level + "db) ");
-				if (nombre.equals("JAZZTEL_") || nombre.equals("WLAN_")) {
-					// Calculamos la clave
-					textStatus.append("\n" + "Key: "+ getKey(config.SSID, config.BSSID));
-					// textStatus.append("\n\n" + config.toString());
+				if (!vulnerables.isChecked() || nombre.equals("JAZZTEL_") || nombre.equals("WLAN_")){
+					textStatus.append("\n\n" + "Red: " + config.SSID + " - " + config.BSSID + " (" + config.level + "db) ");
+					if (nombre.equals("JAZZTEL_") || nombre.equals("WLAN_")) {
+						// Calculamos la clave
+						textStatus.append("\n" + "Key: "+ getKey(config.SSID, config.BSSID));
+						// textStatus.append("\n\n" + config.toString());
+					}
 				}
 			}
 			Log.d(TAG, "onClick() Refresh()");

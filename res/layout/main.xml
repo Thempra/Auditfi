@@ -7,6 +7,11 @@
   		<TextView android:id="@+id/TituloLabel" android:text="@string/TituloLabel" android:textSize="32px" android:textStyle="bold" android:layout_centerInParent="true" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
   </RelativeLayout>
   
+   <CheckBox android:id="@+id/vulnerables"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content" android:text="@string/Vulnerables" />
+  
+  
   <Button android:layout_width="fill_parent"
     android:layout_height="wrap_content" android:id="@+id/buttonScan"
     android:text="@string/BuscarRedes" android:padding="14px" ></Button>
