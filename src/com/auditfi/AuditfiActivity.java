@@ -84,7 +84,7 @@ public class AuditfiActivity extends Activity implements OnClickListener {
 				if (config.SSID.length()==12)
 					nombre=config.SSID.substring(0, 8);
 				else if (config.SSID.length()==9)
-				    nombre=config.SSID.substring(0, 6);
+				    nombre=config.SSID.substring(0, 5);
 				
 				
 				textStatus.append("\n\n" + "Red: " + config.SSID + " - " + config.BSSID + " (" + config.level + "db) ");
