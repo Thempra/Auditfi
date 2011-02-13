@@ -7,12 +7,10 @@ import java.util.List;
 import android.app.Activity;
 import android.content.BroadcastReceiver;
 import android.content.Context;
-import android.content.IntentFilter;
 import android.net.wifi.ScanResult;
-import android.net.wifi.WifiConfiguration;
-import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
+import android.text.Html;
 import android.util.Log;
 import android.view.View;
 import android.view.Window;
@@ -29,6 +27,7 @@ public class AuditfiActivity extends Activity implements OnClickListener {
 
 	TextView textStatus;
 	Button buttonScan;
+	CheckBox vulnerables;
 
 	/** Called when the activity is first created. */
 	@Override
@@ -42,6 +41,7 @@ public class AuditfiActivity extends Activity implements OnClickListener {
 
 		// Setup UI
 		textStatus = (TextView) findViewById(R.id.textStatus);
+		vulnerables = (CheckBox) findViewById(R.id.vulnerables);
 		buttonScan = (Button) findViewById(R.id.buttonScan);
 		buttonScan.setOnClickListener(this);
 
@@ -78,26 +78,36 @@ public class AuditfiActivity extends Activity implements OnClickListener {
 
 			// Listado de las redes wifi
 			List<ScanResult> configs = wifi.getScanResults();
-			textStatus.setText(""); //Limpiamos el texto
 			
+
+			textStatus.setText(""); //Limpiamos el texto
+			int numero_redes = 0;
 			for (ScanResult config : configs) {
+		
 				String nombre = "";
-				if (config.SSID.length()==12)
+				if (config.SSID.length()==12) //Tiene 12 caracteres, puede ser JAZZTEL_XXXX
 					nombre=config.SSID.substring(0, 8);
-				else if (config.SSID.length()==9)
+				else if (config.SSID.length()==9) //Tiene 9 caracteres, puede ser WLAN_XXXX
 				    nombre=config.SSID.substring(0, 5);
 				
-				CheckBox vulnerables = (CheckBox) findViewById(R.id.vulnerables);
-				
+				//Si esta marcado el checkbox vulnerables, solamente cogemos las jazztel y las wlan
 				if (!vulnerables.isChecked() || nombre.equals("JAZZTEL_") || nombre.equals("WLAN_")){
-					textStatus.append("\n\n" + "Red: " + config.SSID + " - " + config.BSSID + " (" + config.level + "db) ");
+					textStatus.append(Html.fromHtml("<b>Red</b>: " + config.SSID + " - " + config.BSSID + " (" + config.level + "db) "));
+					numero_redes++;
+					//Si son JAZZTEL_XXXX o WLAN_XXXX, mostramos la clave
 					if (nombre.equals("JAZZTEL_") || nombre.equals("WLAN_")) {
 						// Calculamos la clave
-						textStatus.append("\n" + "Key: "+ getKey(config.SSID, config.BSSID));
-						// textStatus.append("\n\n" + config.toString());
+						textStatus.append(Html.fromHtml("\n" + "<b>Key: "+ getKey(config.SSID, config.BSSID)+"</b>"));
 					}
+					textStatus.append("\n\n");
 				}
 			}
+			
+			//Si no se ha mostrado ninguna red, escribimos mensaje
+			if(numero_redes == 0){
+				textStatus.setText(getResources().getString( R.string.NoHayRedes ));
+			}
+			
 			Log.d(TAG, "onClick() Refresh()");
 
 		}

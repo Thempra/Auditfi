@@ -22,6 +22,7 @@
     <string name="BuscarRedes">Buscar redes</string>
     <string name="WifiOff">WiFi desactivado.</string>
     <string name="ActivandoWifi">Activando WiFi.</string>
+    <string name="NoHayRedes">No se han encontrado redes</string>
     <string name="SinRedes">Presiona buscar redes para empezar a buscar TU red. Asegurate de tener el WiFi activado.</string>
     
     

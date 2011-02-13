@@ -41,8 +41,9 @@ public final class R {
         public static final int Disclaimer2=0x7f040006;
         public static final int Disclaimer3=0x7f040007;
         public static final int Escanear=0x7f040002;
+        public static final int NoHayRedes=0x7f04000c;
         public static final int Salir=0x7f040004;
-        public static final int SinRedes=0x7f04000c;
+        public static final int SinRedes=0x7f04000d;
         public static final int TituloLabel=0x7f040001;
         public static final int Volver=0x7f040003;
         public static final int Vulnerables=0x7f040008;
