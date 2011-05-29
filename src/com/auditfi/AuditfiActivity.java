@@ -12,6 +12,9 @@ import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.text.Html;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.view.View.OnClickListener;
@@ -170,5 +173,30 @@ public class AuditfiActivity extends Activity implements OnClickListener {
 		return "";
 	}
 	
+	/*
+	 *  Funciones relativas al menu inferior 
+	 */
+	public boolean onCreateOptionsMenu(Menu menu) {
+	    MenuInflater inflater = getMenuInflater();
+	    inflater.inflate(R.menu.auditfi_menu, menu);
+	    return true;
+	}
+	
+	public boolean onOptionsItemSelected(MenuItem item) {
+	    // Handle item selection
+	    switch (item.getItemId()) {
+	    case R.id.exit:
+	        //Salida del sistema
+	    	 finish();
+	    	 
+	        return true;
+	    case R.id.about:
+	        //Menu Acerca de ...
+	    	
+	        return true;
+	    default:
+	        return super.onOptionsItemSelected(item);
+	    }
+	}
 	
 }

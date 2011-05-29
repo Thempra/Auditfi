@@ -40,7 +40,7 @@
   		<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:layout_weight="1" android:layout_height="fill_parent" android:layout_width="fill_parent">
   			<!-- Parte inf derecha -->
   		
-  			<ImageButton android:id="@+id/SalirImagen" android:layout_centerHorizontal="true" android:src="@drawable/salir" android:layout_width="wrap_content" android:layout_height="wrap_content"></ImageButton>
+  			<ImageButton android:id="@+id/SalirImagen" android:layout_centerHorizontal="true" android:src="@drawable/exit" android:layout_width="wrap_content" android:layout_height="wrap_content"></ImageButton>
   			
   			<TextView android:layout_below="@+id/SalirImagen" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/SalirLabel" android:text="@string/Salir"></TextView>
 		
