@@ -5,8 +5,10 @@ import java.security.NoSuchAlgorithmException;
 import java.util.List;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.BroadcastReceiver;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.net.wifi.ScanResult;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
@@ -192,11 +194,24 @@ public class AuditfiActivity extends Activity implements OnClickListener {
 	        return true;
 	    case R.id.about:
 	        //Menu Acerca de ...
-	    	
+	    	showMsg("Acerca de ...", "Equipo de desarroladores:\n\n\n  - Thempra\n\n  - Craswer\n\n", "Aceptar"); 
+ 
+
 	        return true;
 	    default:
 	        return super.onOptionsItemSelected(item);
 	    }
 	}
 	
+	 private void showMsg(String title, String msg, String txtButton){
+	        new AlertDialog.Builder(this).setTitle(title) 
+	        .setMessage(msg) 
+	        .setNeutralButton(txtButton, new android.content.DialogInterface.OnClickListener() { 
+
+				public void onClick(DialogInterface dialog, int which) {
+					// TODO Auto-generated method stub
+					
+				} 
+	        }).show();
+	    }
 }
