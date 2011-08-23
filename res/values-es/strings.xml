@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Auditfi</string>
+    
+    
+    
+    <string name="TituloLabel">Auditfi</string>
+    <string name="Escanear">Escanear</string>
+    <string name="Volver">Volver</string>
+    <string name="Salir">Salir</string>
+    
+    
+    <string name="Disclaimer1">Esta aplicación comprueba la seguridad de TU red wifi. Su única finalidad es demostrar  que con un simple clic la seguridad de tu red wifi es comprometida,  para que así te des cuenta de que no debes tener una clave por defecto.</string>
+    <string name="Disclaimer2">Queda expresamente PROHIBIDO la utilización de Auditfi para obtener la clave de un   router distinto al tuyo. No nos hacemos responsables del mal uso que se le pueda dar a esta aplicación.</string>
+    <string name="Disclaimer3">Si no acepta las condiciones haga clic en salir.</string>
+    
+    
+    <string name="Vulnerables">Solo vulnerables</string>
+    <string name="BuscarRedes">Buscar redes</string>
+    <string name="WifiOff">WiFi desactivado.</string>
+    <string name="ActivandoWifi">Activando WiFi.</string>
+    <string name="NoHayRedes">No se han encontrado redes</string>
+    <string name="SinRedes">Presiona buscar redes para empezar a buscar TU red. Asegurate de tener el WiFi activado.</string>
+    <string name="about">Acerca de ...</string>
+    <string name="exit">Salir.</string>
+    
+    <string name="Copiar">Copiar</string>
+    <string name="contrasenaCopiada">La contraseña ha sido copiada al portapales.</string>
+    <string name="redNoVulnerable">La red no es vulnerable.</string>
+    <string name="Aceptar">Aceptar.</string>
+    
+    
+</resources>
