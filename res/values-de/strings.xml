@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Auditfi</string>
+    
+    
+    
+    <string name="TituloLabel">Auditfi</string>
+    <string name="Escanear">Scan</string>
+    <string name="Volver">Rückkehr</string>
+    <string name="Salir">Beenden</string>
+    
+    
+    <string name="Disclaimer1">Dieses Programm überprüft die Sicherheit Ihrer WLAN-Netzwerk. Ihr einziger Zweck ist zu zeigen, dass durch einfaches Anklicken die Sicherheit Ihrer WLAN-Netzwerk gefährdet ist, so dass Sie erkennen, sollten Sie nicht über eine Standard-Taste.</string>
+    <string name="Disclaimer2">Es ist die Verwendung von Auditfi, um den Schlüssel von einem anderen Router als Ihr eigenes zu bekommen verboten. Wir sind nicht verantwortlich für den Missbrauch, die zu dieser Anwendung gegeben werden kann.</string>
+    <string name="Disclaimer3">Wenn Sie nicht mit den Bedingungen auf Beenden einverstanden.</string>
+    
+    
+    <string name="Vulnerables">Nur anfällig</string>
+    <string name="BuscarRedes">Search-Netzwerk</string>
+    <string name="WifiOff">WiFi ausgeschaltet.</string>
+    <string name="ActivandoWifi">Aktivieren WiFi.</string>
+    <string name="NoHayRedes">Keine Netzwerke gefunden</string>
+    <string name="SinRedes">Klicken Sie auf Suche Netzwerken zu beginnen, für Ihr Netzwerk. Vergewissern Sie sich, WiFi aktiviert.</string>
+    <string name="about">Über ...</string>
+    <string name="exit">Exit.</string>
+    
+    <string name="Copiar">Kopie</string>
+    <string name="contrasenaCopiada">Das Passwort wird portapales kopiert.</string>
+    <string name="redNoVulnerable">Das Netzwerk ist nicht verwundbar.</string>
+    <string name="Aceptar">OK.</string>
+    
+    
+</resources>
