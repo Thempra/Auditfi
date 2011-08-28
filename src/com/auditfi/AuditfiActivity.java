@@ -332,7 +332,7 @@ public class AuditfiActivity extends Activity implements OnClickListener {
 	        return true;
 	    case R.id.about:
 	        //Menu Acerca de ...
-	    	showMsg("Acerca de ...", "Equipo de desarroladores:\n\n\n  - Thempra\n\n  - Craswer\n\n", "Aceptar"); 
+	    	showMsg(getResources().getString(R.string.about), "Developer Team:\n\n\n  - Thempra\n(http://www.thempra.net)\n\n  - Craswer\n(http://www.craswer.net)\n\n", getResources().getString(R.string.Aceptar)); 
  
 
 	        return true;
