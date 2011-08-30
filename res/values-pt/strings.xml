@@ -10,9 +10,9 @@
     <string name="Salir">Sair</string>
     
     
-    <string name="Disclaimer1">Esta aplicação verifica a segurança de sua rede sem fio. Seu único propósito é mostrar que com um simples clique a segurança da sua rede wifi está comprometido, de modo que você percebe que você não deve ter uma chave padrão.</string>
-    <string name="Disclaimer2">É proibido o uso de Auditfi para obter a chave de um roteador diferente do seu. Nós não somos responsáveis ​​por qualquer uso indevido que pode ser dada a esta aplicação.</string>
-    <string name="Disclaimer3">Se você não concordar com os termos clique em Sair</string>
+    <string name="Disclaimer">Esta aplicação verifica a segurança de sua rede sem fio. Seu único propósito é mostrar que com um simples clique a segurança da sua rede wifi está comprometido, de modo que você percebe que você não deve ter uma chave padrão.
+    \n\nÉ proibido o uso de Auditfi para obter a chave de um roteador diferente do seu. Nós não somos responsáveis ​​por qualquer uso indevido que pode ser dada a esta aplicação.
+	\n\nSe você não concordar com os termos clique em Sair</string>
     
     
     <string name="Vulnerables">Apenas vulneráveis</string>

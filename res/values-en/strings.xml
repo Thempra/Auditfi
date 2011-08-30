@@ -10,9 +10,9 @@
     <string name="Salir">Exit</string>
     
     
-    <string name="Disclaimer1">This application checks the security of your WiFi network. Its sole purpose is to show that with a simple click the security of your wifi network is compromised, so that you realize you should not have a default key.</string>
-    <string name="Disclaimer2">It is forbidden the use of Auditfi to get the key from a router other than your own. We are not responsible for any misuse that can be given to this application.</string>
-    <string name="Disclaimer3">If you do not agree to the terms, you click Exit.</string>
+    <string name="Disclaimer">This application checks the security of your WiFi network. Its sole purpose is to show that with a simple click the security of your wifi network is compromised, so that you realize you should not have a default key.
+    \n\nIt is forbidden the use of Auditfi to get the key from a router other than your own. We are not responsible for any misuse that can be given to this application.
+    \n\nIf you do not agree to the terms, you click Exit.</string>
     
     
     <string name="Vulnerables">Only vulnerable</string>

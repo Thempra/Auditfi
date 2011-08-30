@@ -1,53 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="@drawable/background">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@drawable/background">
 
-  
-  <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  android:layout_height="wrap_content" android:layout_width="fill_parent" android:padding="10px">
-  		<!-- Titulo -->
-  		<TextView android:id="@+id/TituloLabel" android:text="@string/TituloLabel" android:textSize="32px" android:textStyle="bold" android:layout_centerInParent="true" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
-  </RelativeLayout>
-  
-  
-  
-  <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="left"  android:layout_height="wrap_content" android:layout_width="fill_parent">
-  			
-  			<TextView android:padding="14px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/Disclaimer1" android:text="@string/Disclaimer1"></TextView>
-		  	
-		  	<TextView android:padding="14px" android:layout_below="@+id/Disclaimer1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/Disclaimer2" android:text="@string/Disclaimer2"></TextView>
-		  	
-		  	<TextView android:padding="14px" android:layout_below="@+id/Disclaimer2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/Disclaimer3" android:text="@string/Disclaimer3"></TextView>
-		  		
-  </RelativeLayout>
-  
-  
-  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_weight="1" android:layout_height="fill_parent" android:layout_width="fill_parent">
-  
-  </LinearLayout>
-  
-  
-  
-  
-  <LinearLayout android:padding="5px" xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal"  android:layout_height="wrap_content" android:layout_width="fill_parent">
-  		<!-- Parte inferior -->
-  		<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:layout_weight="1" android:layout_height="fill_parent" android:layout_width="fill_parent">
-  			<!-- Parte inf izquierda -->
-  			<ImageButton android:id="@+id/EscanearImagen" android:layout_centerHorizontal="true" android:src="@drawable/wifi" android:layout_width="wrap_content" android:layout_height="wrap_content"></ImageButton>
-  			
-  			<TextView android:layout_below="@+id/EscanearImagen" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/EscanearLabel" android:text="@string/Escanear"></TextView>
-		
-  		</RelativeLayout>
-  		
-  		<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:layout_weight="1" android:layout_height="fill_parent" android:layout_width="fill_parent">
-  			<!-- Parte inf derecha -->
-  		
-  			<ImageButton android:id="@+id/SalirImagen" android:layout_centerHorizontal="true" android:src="@drawable/exit" android:layout_width="wrap_content" android:layout_height="wrap_content"></ImageButton>
-  			
-  			<TextView android:layout_below="@+id/SalirImagen" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/SalirLabel" android:text="@string/Salir"></TextView>
-		
-  		</RelativeLayout>
-  </LinearLayout>
-  
 
-  
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_height="wrap_content" android:layout_width="fill_parent"
+		android:padding="30px">
+		<!-- Titulo -->
+		<TextView android:id="@+id/TituloLabel" android:text="@string/TituloLabel"
+			android:textSize="32px" android:textStyle="bold"
+			android:layout_centerInParent="true" android:layout_width="wrap_content"
+			android:layout_height="wrap_content"></TextView>
+	</RelativeLayout>
+
+
+
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:gravity="left" android:layout_height="wrap_content"
+		android:layout_width="fill_parent">
+		<ScrollView android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:layout_marginBottom="120dip">
+			<TextView android:padding="14px" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/Disclaimer"
+				android:text="@string/Disclaimer"></TextView>
+		</ScrollView>
+	</RelativeLayout>
+
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_weight="1" android:layout_height="fill_parent"
+		android:layout_width="fill_parent">
+
+	</LinearLayout>
+
+
+
+
+	<LinearLayout android:padding="5px"
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="horizontal" android:layout_height="wrap_content"
+		android:layout_width="fill_parent">
+		<!-- Parte inferior -->
+		<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:gravity="center" android:layout_weight="1"
+			android:layout_height="fill_parent" android:layout_width="fill_parent">
+			<!-- Parte inf izquierda -->
+			<ImageButton android:id="@+id/EscanearImagen"
+				android:layout_centerHorizontal="true" android:src="@drawable/wifi"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"></ImageButton>
+
+			<TextView android:layout_below="@+id/EscanearImagen"
+				android:gravity="center_horizontal" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:id="@+id/EscanearLabel"
+				android:text="@string/Escanear"></TextView>
+
+		</RelativeLayout>
+
+		<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:gravity="center" android:layout_weight="1"
+			android:layout_height="fill_parent" android:layout_width="fill_parent">
+			<!-- Parte inf derecha -->
+
+			<ImageButton android:id="@+id/SalirImagen"
+				android:layout_centerHorizontal="true" android:src="@drawable/exit"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"></ImageButton>
+
+			<TextView android:layout_below="@+id/SalirImagen"
+				android:gravity="center_horizontal" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:id="@+id/SalirLabel"
+				android:text="@string/Salir"></TextView>
+
+		</RelativeLayout>
+	</LinearLayout>
+
+
+
 
 </LinearLayout>

@@ -10,9 +10,9 @@
     <string name="Salir">Quitter</string>
     
     
-    <string name="Disclaimer1">Cette application vérifie la sécurité de votre réseau WiFi. Son seul but est de montrer que d\'un simple clic de la sécurité de votre réseau wifi est compromise, de sorte que vous réalisez que vous ne devrait pas avoir une clé par défaut.</string>
-    <string name="Disclaimer2">Il est interdit l\'utilisation de Auditfi pour obtenir la clé d\'un routeur autre que le vôtre. Nous ne sommes pas responsables de toute utilisation abusive qui peut être donnée à cette demande.</string>
-    <string name="Disclaimer3">Si vous n\'acceptez pas les termes cliquez sur Quitter.</string>
+    <string name="Disclaimer">Cette application vérifie la sécurité de votre réseau WiFi. Son seul but est de montrer que d\'un simple clic de la sécurité de votre réseau wifi est compromise, de sorte que vous réalisez que vous ne devrait pas avoir une clé par défaut.
+	\n\nIl est interdit l\'utilisation de Auditfi pour obtenir la clé d\'un routeur autre que le vôtre. Nous ne sommes pas responsables de toute utilisation abusive qui peut être donnée à cette demande.
+	\n\nSi vous n\'acceptez pas les termes cliquez sur Quitter.</string>
     
     
     <string name="Vulnerables">Seuls les plus vulnérables</string>
